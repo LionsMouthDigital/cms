@@ -224,6 +224,7 @@ class EntriesController extends CpController
 
             $entry->updateLastModified(User::current())->save();
         }
+
         return new EntryResource($entry->fresh());
     }
 
